@@ -17,4 +17,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
             e.printStackTrace();
         }
     }
+
+    public void deliver () {
+
+        switch ()
+    }
 }

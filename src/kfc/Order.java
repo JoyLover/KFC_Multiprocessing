@@ -1,18 +1,10 @@
 package kfc;
 
-import kfc.food.Beverage.Coke;
-import kfc.food.Beverage.Milk;
-import kfc.food.Beverage.Sprite;
-import kfc.food.Burger.ChickenBurger;
-import kfc.food.Burger.Hamburger;
-import kfc.food.Burger.VeggieBurger;
-import kfc.food.Dessert.Biscuits;
-import kfc.food.Dessert.Cake;
-import kfc.food.Dessert.Cookies;
+import kfc.food.Beverage.*;
+import kfc.food.Burger.*;
+import kfc.food.Dessert.*;
+import kfc.food.Side.*;
 import kfc.food.Food;
-import kfc.food.Side.Cheese;
-import kfc.food.Side.ColeSlaw;
-import kfc.food.Side.GreenBeans;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -25,12 +17,13 @@ public class Order {
     static final int beverageTypes = 3;
     static final int dessertTypes = 3;
 
-    public List<Food> foodList = new LinkedList<>();
+    public LinkedList<Food> foodList = new LinkedList<Food>();
 
     public Order () {
 
         Random r = new Random();
 
+        // The order of these switches cannot be changed.
         switch (r.nextInt(burgerTypes + 1)) {
 
             case 1:
@@ -46,6 +39,7 @@ public class Order {
                 break;
 
             default:
+                foodList.add(null);
                 break;
         }
 
@@ -64,6 +58,7 @@ public class Order {
                 break;
 
             default:
+                foodList.add(null);
                 break;
         }
 
@@ -82,6 +77,7 @@ public class Order {
                 break;
 
             default:
+                foodList.add(null);
                 break;
         }
 
@@ -100,6 +96,7 @@ public class Order {
                 break;
 
             default:
+                foodList.add(null);
                 break;
         }
     }

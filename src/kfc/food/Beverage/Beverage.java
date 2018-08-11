@@ -2,5 +2,5 @@ package kfc.food.Beverage;
 
 import kfc.food.Food;
 
-public class Milk extends Beverage{
+public class Beverage extends Food {
 }

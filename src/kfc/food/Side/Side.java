@@ -2,5 +2,5 @@ package kfc.food.Side;
 
 import kfc.food.Food;
 
-public class ColeSlaw extends Side {
+public class Side extends Food {
 }

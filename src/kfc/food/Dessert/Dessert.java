@@ -2,5 +2,5 @@ package kfc.food.Dessert;
 
 import kfc.food.Food;
 
-public class Cake extends Dessert {
+public class Dessert extends Food {
 }
