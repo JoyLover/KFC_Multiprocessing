@@ -15,15 +15,20 @@ public class Main {
 
         Thread orderThread = new Thread(new OrderThread());
 
-        ExecutorService fontDeskThreads = Executors.newFixedThreadPool(4);
         ExecutorService deliveryThreads = Executors.newFixedThreadPool(4);
+        ExecutorService fontDeskThreads = Executors.newFixedThreadPool(4);
         ExecutorService cateringThreads = Executors.newFixedThreadPool(2);
 
         orderThread.start();
 
+        String[] foodTypes = {"Burger", "Side", "Beverage", "Dessert"};
+
+        for (String foodType : foodTypes) {
+            deliveryThreads.submit(new DeliveryThread(foodType));
+        }
+
         for (int i = 0; i < 4; i++) {
             fontDeskThreads.submit(new FontDeskThread(i));
-            deliveryThreads.submit(new DeliveryThread(i));
         }
 
         for (int i = 0; i < 2; i++) {

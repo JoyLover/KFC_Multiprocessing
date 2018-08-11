@@ -37,41 +37,69 @@ class ThreadBase{
     // Burger
     static HashMap<String, LinkedList<?>> burgers = new HashMap<String, LinkedList<?>>() {
         {
-            burgers.put("ChickenBurger", chickenBurgers);
-            burgers.put("Hamburger", hamburgers);
-            burgers.put("VeggieBurger", veggieBurgers);
+            try {
+                burgers.put("ChickenBurger", chickenBurgers);
+                burgers.put("Hamburger", hamburgers);
+                burgers.put("VeggieBurger", veggieBurgers);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     };
 
     // Side
     static HashMap<String, LinkedList<?>> sides = new HashMap<String, LinkedList<?>>() {
         {
-            sides.put("Cheese", cheeses);
-            sides.put("ColeSlaw", coleSlaws);
-            sides.put("GreenBeans", greenBeans);
+            try {
+                sides.put("Cheese", cheeses);
+                sides.put("ColeSlaw", coleSlaws);
+                sides.put("GreenBeans", greenBeans);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     };
 
     // Beverage
     static HashMap<String, LinkedList<?>> beverages = new HashMap<String, LinkedList<?>>() {
         {
-            beverages.put("Coke", cokes);
-            beverages.put("Milk", milks);
-            beverages.put("Sprite", sprites);
+            try {
+                beverages.put("Coke", cokes);
+                beverages.put("Milk", milks);
+                beverages.put("Sprite", sprites);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     };
 
     // Dessert
     static HashMap<String, LinkedList<?>> desserts = new HashMap<String, LinkedList<?>>() {
         {
-            desserts.put("Biscuits", biscuits);
-            desserts.put("Cake", cakes);
-            desserts.put("Cookies", cookies);
+            try {
+                desserts.put("Biscuits", biscuits);
+                desserts.put("Cake", cakes);
+                desserts.put("Cookies", cookies);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     };
 
     static HashMap<String, HashMap<String, LinkedList<?>>> foodCache = new HashMap<>() {
         {
+            try {
+                foodCache.put("Burger", burgers);
+                foodCache.put("Side", sides);
+                foodCache.put("Beverage", beverages);
+                foodCache.put("Dessert", desserts);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         }
     };
