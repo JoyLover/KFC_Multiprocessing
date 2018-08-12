@@ -1,5 +1,16 @@
 package kfc.Threads;
 
+import kfc.food.Beverage.Coke;
+import kfc.food.Beverage.Milk;
+import kfc.food.Beverage.Sprite;
+import kfc.food.Burger.*
+import kfc.food.Dessert.Biscuits;
+import kfc.food.Dessert.Cake;
+import kfc.food.Dessert.Cookies;
+import kfc.food.Side.Cheese;
+import kfc.food.Side.ColeSlaw;
+import kfc.food.Side.GreenBeans;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -37,27 +48,86 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     private void burgerDeliver () {
 
+        while (isRunning()) {
+
+            try {
+                getChickenBurgers().push(new ChickenBurger());
+                getHamburgers().push(new Hamburger());
+                getVeggieBurgers().push(new VeggieBurger());
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void sideDeliver () {
+        while (isRunning()) {
 
+            try {
+                getCheeses().push(new Cheese());
+                getColeSlaws().push(new ColeSlaw());
+                getGreenBeans().push(new GreenBeans());
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void beverageDeliver () {
+        while (isRunning()) {
 
+            try {
+                getCokes().push(new Coke());
+                getMilks().push(new Milk());
+                getSprites().push(new Sprite());
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void dessertDeliver () {
+        while (isRunning()) {
 
+            try {
+                getBiscuits().push(new Biscuits());
+                getCakes().push(new Cake());
+                getCookies().push(new Cookies());
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

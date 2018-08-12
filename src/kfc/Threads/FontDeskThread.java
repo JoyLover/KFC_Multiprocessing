@@ -14,14 +14,14 @@ public class FontDeskThread extends ThreadBase implements Runnable{
         this.id = id;
     }
 
-    public void getOrder () {
+    private void getOrder () {
 
-        while (running) {
-            if (orders.size() > 0) {
+        while (isRunning()) {
+            if (getOrders().size() > 0) {
 
                 Order currentOrder;
                 try {
-                    currentOrder = orders.removeFirst();
+                    currentOrder = getOrders().removeFirst();
                 } catch (NoSuchElementException e) {
                     continue;
                 }
@@ -38,6 +38,7 @@ public class FontDeskThread extends ThreadBase implements Runnable{
 
                         }
                     }
+
                 }
             }
         }
@@ -49,5 +50,7 @@ public class FontDeskThread extends ThreadBase implements Runnable{
         getOrder();
     }
 
-
+    public int getId() {
+        return id;
+    }
 }

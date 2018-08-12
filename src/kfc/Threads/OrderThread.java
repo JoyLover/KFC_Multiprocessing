@@ -11,9 +11,9 @@ public class OrderThread extends ThreadBase implements Runnable{
         this.orderProvider();
     }
 
-    public void orderProvider () {
+    private void orderProvider () {
 
-        while (true) {
+        while (running) {
 
             Order order = new Order();
 

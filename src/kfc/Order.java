@@ -12,10 +12,10 @@ import java.util.Random;
 
 public class Order {
 
-    static final int burgerTypes = 3;
-    static final int sideTypes = 3;
-    static final int beverageTypes = 3;
-    static final int dessertTypes = 3;
+    private static final int burgerTypes = 3;
+    private static final int sideTypes = 3;
+    private static final int beverageTypes = 3;
+    private static final int dessertTypes = 3;
 
     public LinkedList<Food> foodList = new LinkedList<Food>();
 
