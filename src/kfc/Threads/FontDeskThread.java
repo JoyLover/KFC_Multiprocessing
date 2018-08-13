@@ -17,29 +17,18 @@ public class FontDeskThread extends ThreadBase implements Runnable{
     private void getOrder () {
 
         while (isRunning()) {
+
             if (getOrders().size() > 0) {
 
                 Order currentOrder;
+
                 try {
                     currentOrder = getOrders().removeFirst();
                 } catch (NoSuchElementException e) {
                     continue;
                 }
 
-                int i = 0;
-                while (currentOrder.foodList.size() != 0) {
 
-                    Food food = currentOrder.foodList.removeFirst();
-                    i++;
-
-                    if (food != null) {
-                        switch (i) {
-                            case 1:
-
-                        }
-                    }
-
-                }
             }
         }
     }

@@ -1,15 +1,9 @@
 package kfc.Threads;
 
-import kfc.food.Beverage.Coke;
-import kfc.food.Beverage.Milk;
-import kfc.food.Beverage.Sprite;
-import kfc.food.Burger.*
-import kfc.food.Dessert.Biscuits;
-import kfc.food.Dessert.Cake;
-import kfc.food.Dessert.Cookies;
-import kfc.food.Side.Cheese;
-import kfc.food.Side.ColeSlaw;
-import kfc.food.Side.GreenBeans;
+import kfc.food.Beverage.*;
+import kfc.food.Burger.*;
+import kfc.food.Dessert.*;
+import kfc.food.Side.*;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

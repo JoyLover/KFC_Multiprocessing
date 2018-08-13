@@ -13,13 +13,12 @@ public class Main {
 
     public static void main (String args[]) {
 
-        Thread orderThread = new Thread(new OrderThread());
-
+        ExecutorService orderThread = Executors.newCachedThreadPool();
         ExecutorService deliveryThreads = Executors.newFixedThreadPool(4);
         ExecutorService fontDeskThreads = Executors.newFixedThreadPool(4);
         ExecutorService cateringThreads = Executors.newFixedThreadPool(2);
 
-        orderThread.start();
+        orderThread.submit(new OrderThread());
 
         String[] foodTypes = {"Burger", "Side", "Beverage", "Dessert"};
 
