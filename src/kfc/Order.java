@@ -23,8 +23,17 @@ public class Order {
     public Order () throws Exception {
 
         Random r = new Random();
+        int r1, r2, r3, r4;
 
-        switch (r.nextInt(burgerTypes + 1)) {
+        do {
+            r1 = r.nextInt(burgerTypes + 1);
+            r2 = r.nextInt(sideTypes + 1);
+            r3 = r.nextInt(beverageTypes + 1);
+            r4 = r.nextInt(dessertTypes + 1);
+        } while (r1 == 0 && r2 == 0 && r3 == 0 && r4 == 0);
+
+
+        switch (r1) {
 
             case 1:
                 foodList.put("Burger", new ChickenBurger());
@@ -43,7 +52,7 @@ public class Order {
                 break;
         }
 
-        switch (r.nextInt(sideTypes + 1)) {
+        switch (r2) {
 
             case 1:
                 foodList.put("Side", new Cheese());
@@ -62,7 +71,7 @@ public class Order {
                 break;
         }
 
-        switch (r.nextInt(beverageTypes + 1)) {
+        switch (r3) {
 
             case 1:
                 foodList.put("Beverage", new Coke());
@@ -81,7 +90,7 @@ public class Order {
                 break;
         }
 
-        switch (r.nextInt(dessertTypes + 1)) {
+        switch (r4) {
 
             case 1:
                 foodList.put("Dessert", new Biscuits());

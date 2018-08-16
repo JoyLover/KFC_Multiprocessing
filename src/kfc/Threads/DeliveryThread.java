@@ -49,9 +49,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         while (isRunning()) {
 
             try {
-                getChickenBurgers().push(new ChickenBurger());
-                getHamburgers().push(new Hamburger());
-                getVeggieBurgers().push(new VeggieBurger());
+                getChickenBurgers().put(new ChickenBurger());
+                getHamburgers().put(new Hamburger());
+                getVeggieBurgers().put(new VeggieBurger());
 
             } catch (Exception e) {
                 e.printStackTrace();

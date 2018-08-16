@@ -15,7 +15,11 @@ public class OrderThread extends ThreadBase implements Runnable{
 
         while (isRunning()) {
 
-            getOrders().add(new Order());
+            try {
+                getOrders().put(new Order());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
             try { // Time slot between two customers
                 Thread.sleep(3 + new Random().nextInt(2));

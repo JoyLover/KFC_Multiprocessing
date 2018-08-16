@@ -5,58 +5,58 @@ import kfc.food.Beverage.*;
 import kfc.food.Burger.*;
 import kfc.food.Dessert.*;
 import kfc.food.Side.*;
-import kfc.food.Food;
 
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.concurrent.Future;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 
 class ThreadBase{
 
     /**
      * Orders from guests.
      */
-    private volatile static LinkedList<Order> orders = new LinkedList<Order>();
+    private static BlockingQueue<Order> orders = new LinkedBlockingDeque<>();
 
     /**
      * Food storage from delivering.
      */
     // Burger
-    private volatile static LinkedList<ChickenBurger> chickenBurgers = new LinkedList<ChickenBurger>();
-    private volatile static LinkedList<Hamburger> hamburgers = new LinkedList<Hamburger>();
-    private volatile static LinkedList<VeggieBurger> veggieBurgers = new LinkedList<VeggieBurger>();
+    private static BlockingQueue<ChickenBurger> chickenBurgers = new LinkedBlockingDeque<>();
+    private static BlockingQueue<Hamburger> hamburgers = new LinkedBlockingDeque<>();
+    private static BlockingQueue<VeggieBurger> veggieBurgers = new LinkedBlockingDeque<>();
 
     // Side
-    private volatile static LinkedList<Cheese> cheeses = new LinkedList<Cheese>();
-    private volatile static LinkedList<ColeSlaw> coleSlaws = new LinkedList<ColeSlaw>();
-    private volatile static LinkedList<GreenBeans> greenBeans = new LinkedList<GreenBeans>();
+    private static BlockingQueue<Cheese> cheeses = new LinkedBlockingDeque<>();
+    private static BlockingQueue<ColeSlaw> coleSlaws = new LinkedBlockingDeque<>();
+    private static BlockingQueue<GreenBeans> greenBeans = new LinkedBlockingDeque<>();
 
     // Beverage
-    private volatile static LinkedList<Coke> cokes = new LinkedList<Coke>();
-    private volatile static LinkedList<Milk> milks = new LinkedList<Milk>();
-    private volatile static LinkedList<Sprite> sprites = new LinkedList<Sprite>();
+    private static BlockingQueue<Coke> cokes = new LinkedBlockingDeque<>();
+    private static BlockingQueue<Milk> milks = new LinkedBlockingDeque<>();
+    private static BlockingQueue<Sprite> sprites = new LinkedBlockingDeque<>();
 
     // Dessert
-    private volatile static LinkedList<Biscuits> biscuits = new LinkedList<Biscuits>();
-    private volatile static LinkedList<Cake> cakes = new LinkedList<Cake>();
-    private volatile static LinkedList<Cookies> cookies = new LinkedList<Cookies>();
+    private static BlockingQueue<Biscuits> biscuits = new LinkedBlockingDeque<>();
+    private static BlockingQueue<Cake> cakes = new LinkedBlockingDeque<>();
+    private static BlockingQueue<Cookies> cookies = new LinkedBlockingDeque<>();
 
     // Burger
-    private static HashMap<String, LinkedList<?>> burgers = new HashMap<String, LinkedList<?>>();
+    private static HashMap<String, BlockingQueue<?>> burgers = new HashMap<String, BlockingQueue<?>>();
 
     // Side
-    private static HashMap<String, LinkedList<?>> sides = new HashMap<String, LinkedList<?>>();
+    private static HashMap<String, BlockingQueue<?>> sides = new HashMap<String, BlockingQueue<?>>();
 
     // Beverage
-    private static HashMap<String, LinkedList<?>> beverages = new HashMap<String, LinkedList<?>>();
+    private static HashMap<String, BlockingQueue<?>> beverages = new HashMap<String, BlockingQueue<?>>();
 
     // Dessert
-    private static HashMap<String, LinkedList<?>> desserts = new HashMap<String, LinkedList<?>>();
+    private static HashMap<String, BlockingQueue<?>> desserts = new HashMap<String, BlockingQueue<?>>();
 //
 //    private static HashMap<String, HashMap<String, LinkedList>> foodCache =
 //            new HashMap<String, HashMap<String, LinkedList>>();
 
-    private Future<Order> currentOrder
+//    private Future<Order> currentOrder
 
     // Application running flag.
     private volatile static boolean running = true;
@@ -66,71 +66,71 @@ class ThreadBase{
 //    }
 
 
-    static LinkedList<Order> getOrders() {
+    static BlockingQueue<Order> getOrders() {
         return orders;
     }
 
-    static LinkedList<ChickenBurger> getChickenBurgers() {
+    static BlockingQueue<ChickenBurger> getChickenBurgers() {
         return chickenBurgers;
     }
 
-    static LinkedList<Hamburger> getHamburgers() {
+    static BlockingQueue<Hamburger> getHamburgers() {
         return hamburgers;
     }
 
-    static LinkedList<VeggieBurger> getVeggieBurgers() {
+    static BlockingQueue<VeggieBurger> getVeggieBurgers() {
         return veggieBurgers;
     }
 
-    static LinkedList<Cheese> getCheeses() {
+    static BlockingQueue<Cheese> getCheeses() {
         return cheeses;
     }
 
-    static LinkedList<ColeSlaw> getColeSlaws() {
+    static BlockingQueue<ColeSlaw> getColeSlaws() {
         return coleSlaws;
     }
 
-    static LinkedList<GreenBeans> getGreenBeans() {
+    static BlockingQueue<GreenBeans> getGreenBeans() {
         return greenBeans;
     }
 
-    static LinkedList<Coke> getCokes() {
+    static BlockingQueue<Coke> getCokes() {
         return cokes;
     }
 
-    static LinkedList<Milk> getMilks() {
+    static BlockingQueue<Milk> getMilks() {
         return milks;
     }
 
-    static LinkedList<Sprite> getSprites() {
+    static BlockingQueue<Sprite> getSprites() {
         return sprites;
     }
 
-    static LinkedList<Biscuits> getBiscuits() {
+    static BlockingQueue<Biscuits> getBiscuits() {
         return biscuits;
     }
 
-    static LinkedList<Cake> getCakes() {
+    static BlockingQueue<Cake> getCakes() {
         return cakes;
     }
 
-    static LinkedList<Cookies> getCookies() {
+    static BlockingQueue<Cookies> getCookies() {
         return cookies;
     }
 
-    public static HashMap<String, LinkedList<?>> getBurgers() {
+    public static HashMap<String, BlockingQueue<?>> getBurgers() {
         return burgers;
     }
 
-    public static HashMap<String, LinkedList<?>> getSides() {
+    public static HashMap<String, BlockingQueue<?>> getSides() {
         return sides;
     }
 
-    public static HashMap<String, LinkedList<?>> getBeverages() {
+    public static HashMap<String, BlockingQueue<?>> getBeverages() {
         return beverages;
     }
 
-    public static HashMap<String, LinkedList<?>> getDesserts() {
+    public static HashMap<String, BlockingQueue<?>> getDesserts() {
         return desserts;
     }
 
