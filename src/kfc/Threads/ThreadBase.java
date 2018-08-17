@@ -8,15 +8,16 @@ import kfc.food.Side.*;
 
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
-class ThreadBase{
+public class ThreadBase{
 
     /**
      * Orders from guests.
      */
-    private static BlockingQueue<Order> orders = new LinkedBlockingDeque<>();
+    private static BlockingQueue<Order> orders = new LinkedBlockingDeque<>(200);
 
     /**
      * Food storage from delivering.
@@ -52,18 +53,20 @@ class ThreadBase{
 
     // Dessert
     private static HashMap<String, BlockingQueue<?>> desserts = new HashMap<String, BlockingQueue<?>>();
-//
-//    private static HashMap<String, HashMap<String, LinkedList>> foodCache =
-//            new HashMap<String, HashMap<String, LinkedList>>();
 
-//    private Future<Order> currentOrder
+    private static HashMap<String, HashMap<String, BlockingQueue<?>>> foodCache = new HashMap<>();
 
-    // Application running flag.
+
+    private static String[] foodTypes = {"Burger", "Side", "Beverage", "Dessert"};
+
+    private static BlockingQueue<Order> fontDeskOrder1 = new ArrayBlockingQueue<>(1);
+    private static BlockingQueue<Order> fontDeskOrder2 = new ArrayBlockingQueue<>(1);
+    private static BlockingQueue<Order> fontDeskOrder3 = new ArrayBlockingQueue<>(1);
+    private static BlockingQueue<Order> fontDeskOrder4 = new ArrayBlockingQueue<>(1);
+
+    private static HashMap<Integer, BlockingQueue<Order>> fontDeskMap = new HashMap<>();
+
     private volatile static boolean running = true;
-
-//    public static HashMap<String, HashMap<String, LinkedList>> getFoodCache() {
-//        return foodCache;
-//    }
 
 
     static BlockingQueue<Order> getOrders() {
@@ -118,31 +121,43 @@ class ThreadBase{
         return cookies;
     }
 
-    public static HashMap<String, BlockingQueue<?>> getBurgers() {
+    static HashMap<String, BlockingQueue<?>> getBurgers() {
         return burgers;
     }
 
-    public static HashMap<String, BlockingQueue<?>> getSides() {
+    static HashMap<String, BlockingQueue<?>> getSides() {
         return sides;
     }
 
-    public static HashMap<String, BlockingQueue<?>> getBeverages() {
+    static HashMap<String, BlockingQueue<?>> getBeverages() {
         return beverages;
     }
 
-    public static HashMap<String, BlockingQueue<?>> getDesserts() {
+    static HashMap<String, BlockingQueue<?>> getDesserts() {
         return desserts;
+    }
+
+    static HashMap<String, HashMap<String, BlockingQueue<?>>> getFoodCache() {
+        return foodCache;
+    }
+
+    static String[] getFoodTypes() {
+        return foodTypes;
+    }
+
+    static HashMap<Integer, BlockingQueue<Order>> getFontDeskMap() {
+        return fontDeskMap;
     }
 
     static boolean isRunning() {
         return running;
     }
 
-    static void setRunning(boolean running) {
+    public static void setRunning(boolean running) {
         ThreadBase.running = running;
     }
 
-    ThreadBase () {
+    public ThreadBase () {
 
         try {
             burgers.put("ChickenBurger", chickenBurgers);
@@ -161,10 +176,16 @@ class ThreadBase{
             desserts.put("Cake", cakes);
             desserts.put("Cookies", cookies);
 
-//            foodCache.put("Burger", burgers);
-//            foodCache.put("Side", sides);
-//            foodCache.put("Beverage", beverages);
-//            foodCache.put("Dessert", desserts);
+            foodCache.put("Burger", burgers);
+            foodCache.put("Side", sides);
+            foodCache.put("Beverage", beverages);
+            foodCache.put("Dessert", desserts);
+
+            fontDeskMap.put(1, fontDeskOrder1);
+            fontDeskMap.put(2, fontDeskOrder2);
+            fontDeskMap.put(3, fontDeskOrder3);
+            fontDeskMap.put(4, fontDeskOrder4);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

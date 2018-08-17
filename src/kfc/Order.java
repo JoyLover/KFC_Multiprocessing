@@ -18,6 +18,8 @@ public class Order {
     private static final int beverageTypes = 3;
     private static final int dessertTypes = 3;
 
+    private int id = 0;
+
     public HashMap<String, Food> foodList = new HashMap<String, Food>();
 
     public Order () throws Exception {
@@ -108,5 +110,13 @@ public class Order {
                 foodList.put("Dessert", null);
                 break;
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

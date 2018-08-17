@@ -1,11 +1,9 @@
 package kfc;
 
-import kfc.Threads.CateringThread;
-import kfc.Threads.DeliveryThread;
-import kfc.Threads.FontDeskThread;
-import kfc.Threads.OrderThread;
+import kfc.Threads.*;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -30,7 +28,7 @@ public class Main {
             deliveryThreads.submit(new DeliveryThread(foodType));
         }
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 1; i < 5; i++) {
             fontDeskThreads.submit(new FontDeskThread(i, orderQueue));
         }
 
@@ -38,6 +36,11 @@ public class Main {
             cateringThreads.submit(new CateringThread(i, orderQueue));
         }
 
+        new Scanner(System.in).nextLine();
+        ThreadBase threadBase = new ThreadBase();
+        ThreadBase.setRunning(false);
+
+        orderThread.shutdown();
         fontDeskThreads.shutdown();
         deliveryThreads.shutdown();
         cateringThreads.shutdown();

@@ -69,9 +69,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         while (isRunning()) {
 
             try {
-                getCheeses().push(new Cheese());
-                getColeSlaws().push(new ColeSlaw());
-                getGreenBeans().push(new GreenBeans());
+                getCheeses().put(new Cheese());
+                getColeSlaws().put(new ColeSlaw());
+                getGreenBeans().put(new GreenBeans());
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -89,9 +89,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         while (isRunning()) {
 
             try {
-                getCokes().push(new Coke());
-                getMilks().push(new Milk());
-                getSprites().push(new Sprite());
+                getCokes().put(new Coke());
+                getMilks().put(new Milk());
+                getSprites().put(new Sprite());
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -109,9 +109,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         while (isRunning()) {
 
             try {
-                getBiscuits().push(new Biscuits());
-                getCakes().push(new Cake());
-                getCookies().push(new Cookies());
+                getBiscuits().put(new Biscuits());
+                getCakes().put(new Cake());
+                getCookies().put(new Cookies());
 
             } catch (Exception e) {
                 e.printStackTrace();

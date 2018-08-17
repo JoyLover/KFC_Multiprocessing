@@ -28,7 +28,12 @@ public class FontDeskThread extends ThreadBase implements Runnable{
 
                 try {
                     currentOrder = getOrders().take();
+                    currentOrder.setId(this.id);
+
                     orderQueue.put(currentOrder);
+
+                    getFontDeskMap().get(this.id).take();
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

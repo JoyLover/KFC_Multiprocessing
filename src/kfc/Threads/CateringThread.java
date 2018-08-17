@@ -23,7 +23,20 @@ public class CateringThread extends ThreadBase implements Runnable {
             try {
                 Order order = orderQueue.take();
 
+                for (String type : getFoodTypes()) {
 
+                    Object content = order.foodList.get(type);
+
+                    if (content != null) {
+
+                        String[] dump = content.getClass().getName().split("\\.");
+                        String foodType = dump[dump.length - 1];
+
+                        getFoodCache().get(type).get(foodType).take();
+                    }
+                }
+
+                getFontDeskMap().get(order.getId()).put(order);
 
             } catch (Exception e) {
                 e.printStackTrace();
