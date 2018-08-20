@@ -4,14 +4,17 @@ import kfc.food.Beverage.*;
 import kfc.food.Burger.*;
 import kfc.food.Dessert.*;
 import kfc.food.Side.*;
+import kfc.log.utils.LogOfDeliver;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.logging.Logger;
 
 public class DeliveryThread extends ThreadBase implements Runnable{
 
     private String threadName;
+    private Logger logger;
 
     private static HashMap<String, DeliveryThread> methodMap = new HashMap<String, DeliveryThread>();
 
@@ -22,6 +25,8 @@ public class DeliveryThread extends ThreadBase implements Runnable{
     public DeliveryThread (String threadName) throws Exception {
         super();
         this.threadName = threadName;
+
+        logger = new LogOfDeliver().getLogger();
     }
 
     @Override
@@ -62,6 +67,8 @@ public class DeliveryThread extends ThreadBase implements Runnable{
                 getHamburgers().put(new Hamburger());
                 getVeggieBurgers().put(new VeggieBurger());
 
+                logger.info(getLogInfoString());
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -81,6 +88,8 @@ public class DeliveryThread extends ThreadBase implements Runnable{
                 getCheeses().put(new Cheese());
                 getColeSlaws().put(new ColeSlaw());
                 getGreenBeans().put(new GreenBeans());
+
+                logger.info(getLogInfoString());
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -102,6 +111,8 @@ public class DeliveryThread extends ThreadBase implements Runnable{
                 getMilks().put(new Milk());
                 getSprites().put(new Sprite());
 
+                logger.info(getLogInfoString());
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -122,6 +133,8 @@ public class DeliveryThread extends ThreadBase implements Runnable{
                 getCakes().put(new Cake());
                 getCookies().put(new Cookies());
 
+                logger.info(getLogInfoString());
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -136,5 +149,29 @@ public class DeliveryThread extends ThreadBase implements Runnable{
 
     public String getThreadName() {
         return threadName;
+    }
+
+    private String getLogInfoString () {
+        return
+                "\n### Deliver Thread " + threadName + " :" +
+                "\n> One Cheese, ColeSlaw and GreenBean are added to food cache separately.\n" +
+                "\n<table>" +
+                "\n<tr><th>Food<th>ChickenBurger<th>Hamburger<th>VeggieBurger<th>" +
+                        "ColeSlaw<th>GreenBean<th>Coke<th>Milk<th>Sprite<th>" +
+                        "Biscuit<th>Cake<th>Cookies<th>Dessert<tr>\n" +
+                "\n<tr><td>Remain<td>" + getChickenBurgers().size() + "<td>" +
+                      getHamburgers().size() + "<td>" +
+                      getVeggieBurgers().size() + "<td>" +
+                      getCheeses().size() + "<td>" +
+                      getColeSlaws().size() + "<td>" +
+                      getGreenBeans().size() + "<td>" +
+                      getCokes().size() + "<td>" +
+                      getMilks().size() + "<td>" +
+                      getSprites().size() + "<td>" +
+                      getBiscuits().size() + "<td>" +
+                      getCakes().size() + "<td>" +
+                      getCookies().size() +
+                "</table>" +
+                "\n***\n***\n\n";
     }
 }
