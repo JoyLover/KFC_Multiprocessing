@@ -14,6 +14,7 @@ import java.util.logging.*;
 public class FontDeskThread extends ThreadBase implements Runnable{
 
     private int id;
+
     private BlockingQueue<Order> orderQueue;
     private Logger logger;
 
