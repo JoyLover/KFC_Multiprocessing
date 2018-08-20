@@ -5,6 +5,7 @@ import kfc.food.Beverage.*;
 import kfc.food.Burger.*;
 import kfc.food.Dessert.*;
 import kfc.food.Side.*;
+import kfc.log.utils.*;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -56,7 +57,6 @@ public class ThreadBase{
 
     private static HashMap<String, HashMap<String, BlockingQueue<?>>> foodCache = new HashMap<>();
 
-
     private static String[] foodTypes = {"Burger", "Side", "Beverage", "Dessert"};
 
     private static BlockingQueue<Order> fontDeskOrder1 = new ArrayBlockingQueue<>(1);
@@ -76,11 +76,9 @@ public class ThreadBase{
     static BlockingQueue<ChickenBurger> getChickenBurgers() {
         return chickenBurgers;
     }
-
     static BlockingQueue<Hamburger> getHamburgers() {
         return hamburgers;
     }
-
     static BlockingQueue<VeggieBurger> getVeggieBurgers() {
         return veggieBurgers;
     }
@@ -88,11 +86,9 @@ public class ThreadBase{
     static BlockingQueue<Cheese> getCheeses() {
         return cheeses;
     }
-
     static BlockingQueue<ColeSlaw> getColeSlaws() {
         return coleSlaws;
     }
-
     static BlockingQueue<GreenBeans> getGreenBeans() {
         return greenBeans;
     }
@@ -100,11 +96,9 @@ public class ThreadBase{
     static BlockingQueue<Coke> getCokes() {
         return cokes;
     }
-
     static BlockingQueue<Milk> getMilks() {
         return milks;
     }
-
     static BlockingQueue<Sprite> getSprites() {
         return sprites;
     }
@@ -112,11 +106,9 @@ public class ThreadBase{
     static BlockingQueue<Biscuits> getBiscuits() {
         return biscuits;
     }
-
     static BlockingQueue<Cake> getCakes() {
         return cakes;
     }
-
     static BlockingQueue<Cookies> getCookies() {
         return cookies;
     }
@@ -124,15 +116,12 @@ public class ThreadBase{
     static HashMap<String, BlockingQueue<?>> getBurgers() {
         return burgers;
     }
-
     static HashMap<String, BlockingQueue<?>> getSides() {
         return sides;
     }
-
     static HashMap<String, BlockingQueue<?>> getBeverages() {
         return beverages;
     }
-
     static HashMap<String, BlockingQueue<?>> getDesserts() {
         return desserts;
     }
@@ -157,7 +146,7 @@ public class ThreadBase{
         ThreadBase.running = running;
     }
 
-    public ThreadBase () {
+    public ThreadBase () throws Exception {
 
         try {
             burgers.put("ChickenBurger", chickenBurgers);

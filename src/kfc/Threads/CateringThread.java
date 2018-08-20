@@ -1,16 +1,19 @@
 package kfc.Threads;
 
 import kfc.Order;
+import kfc.log.utils.*;
 
 import java.util.concurrent.BlockingQueue;
+import java.util.logging.*;
 
 public class CateringThread extends ThreadBase implements Runnable {
 
     private int id;
-
     private BlockingQueue<Order> orderQueue;
+    private Logger logger;
 
-    public CateringThread (int id, BlockingQueue<Order> queue) {
+    public CateringThread (int id, BlockingQueue<Order> queue) throws Exception {
+        super();
         this.id = id;
         this.orderQueue = queue;
     }
@@ -23,6 +26,27 @@ public class CateringThread extends ThreadBase implements Runnable {
             try {
                 Order order = orderQueue.take();
 
+                switch (order.getId()) {
+                    case 1:
+                        logger = new LogOfFontDesk1().getLogger();
+                        break;
+                    case 2:
+                        logger = new LogOfFontDesk2().getLogger();
+                        break;
+                    case 3:
+                        logger = new LogOfFontDesk3().getLogger();
+                        break;
+                    case 4:
+                        logger = new LogOfFontDesk4().getLogger();
+                        break;
+
+                    default:
+                        System.out.println("Something goes wrong.");
+                }
+
+                logger.info("\n>> ### *From Cater " + id + " : The food of order " +
+                        order.getOrderId() + " is on prepare.*\n");
+
                 for (String type : getFoodTypes()) {
 
                     Object content = order.foodList.get(type);
@@ -33,8 +57,15 @@ public class CateringThread extends ThreadBase implements Runnable {
                         String foodType = dump[dump.length - 1];
 
                         getFoodCache().get(type).get(foodType).take();
+
+                        logger.info("\n>>> *From Cater " + id + " : One " +
+                                foodType + " is consumed.*\n");
                     }
                 }
+
+                logger.info("\n>> ### *From Cater " + id +
+                        " : The food is prepared and will be sent to font desk " +
+                        order.getId() + ".*\n");
 
                 getFontDeskMap().get(order.getId()).put(order);
 
@@ -42,5 +73,9 @@ public class CateringThread extends ThreadBase implements Runnable {
                 e.printStackTrace();
             }
         }
+    }
+
+    public int getId() {
+        return id;
     }
 }

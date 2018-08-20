@@ -4,7 +4,12 @@ import kfc.Order;
 
 import java.util.Random;
 
-public class OrderThread extends ThreadBase implements Runnable{
+public class OrderThread extends ThreadBase implements Runnable {
+
+    private int orderId = 0;
+
+    public OrderThread() throws Exception {
+    }
 
     @Override
     public void run() {
@@ -15,8 +20,10 @@ public class OrderThread extends ThreadBase implements Runnable{
 
         while (isRunning()) {
 
+            orderId++;
+
             try {
-                getOrders().put(new Order());
+                getOrders().put(new Order(orderId));
             } catch (Exception e) {
                 e.printStackTrace();
             }

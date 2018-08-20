@@ -13,38 +13,47 @@ public class DeliveryThread extends ThreadBase implements Runnable{
 
     private String threadName;
 
-    private static HashMap<String, Method> methodMap = new HashMap<String, Method>() {
-        {
-            try {
-                methodMap.put("Burger", new DeliveryThread("Burger").getClass().getMethod("burgerDeliver"));
-                methodMap.put("Side", new DeliveryThread("side").getClass().getMethod("sideDeliver"));
-                methodMap.put("Beverage", new DeliveryThread("Beverage").getClass().getMethod("beverageDeliver"));
-                methodMap.put("Dessert", new DeliveryThread("Dessert").getClass().getMethod("dessertDeliver"));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    };
+    private static HashMap<String, DeliveryThread> methodMap = new HashMap<String, DeliveryThread>();
 
-    public DeliveryThread (String threadName) {
+    private static HashMap<String, DeliveryThread> getMethodMap() {
+        return methodMap;
+    }
+
+    public DeliveryThread (String threadName) throws Exception {
+        super();
         this.threadName = threadName;
     }
 
     @Override
     public void run() {
 
+        storeMethods();
+
         try {
             if (methodMap.containsKey(this.threadName)) {
 
-                Method methodName = methodMap.get(this.threadName);
-                methodName.invoke(DeliveryThread.class);
+                Object obj = methodMap.get(this.threadName);
+
+                Method methodName = obj.getClass().getDeclaredMethod(this.threadName.toLowerCase() + "Deliver");
+                methodName.invoke(obj);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void burgerDeliver () {
+    private void storeMethods () {
+        try {
+            getMethodMap().put("Burger", new DeliveryThread("Burger"));
+            getMethodMap().put("Side", new DeliveryThread("side"));
+            getMethodMap().put("Beverage", new DeliveryThread("Beverage"));
+            getMethodMap().put("Dessert", new DeliveryThread("Dessert"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void burgerDeliver () {
 
         while (isRunning()) {
 
@@ -65,7 +74,7 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
-    private void sideDeliver () {
+    public void sideDeliver () {
         while (isRunning()) {
 
             try {
@@ -85,7 +94,7 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
-    private void beverageDeliver () {
+    public void beverageDeliver () {
         while (isRunning()) {
 
             try {
@@ -105,7 +114,7 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
-    private void dessertDeliver () {
+    public void dessertDeliver () {
         while (isRunning()) {
 
             try {
@@ -123,5 +132,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
                 e.printStackTrace();
             }
         }
+    }
+
+    public String getThreadName() {
+        return threadName;
     }
 }
