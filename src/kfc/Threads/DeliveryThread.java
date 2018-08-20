@@ -11,9 +11,16 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.logging.Logger;
 
+/**
+ * Delivery Thread
+ * Automatically deliver fresh food to the food storage.
+ */
 public class DeliveryThread extends ThreadBase implements Runnable{
 
+    // ThreadName to differ threads from each other.
+    // 4 threads in total. "Burger", "Side", "Beverage" and "Dessert" thread.
     private String threadName;
+
     private Logger logger;
 
     private static HashMap<String, DeliveryThread> methodMap = new HashMap<String, DeliveryThread>();
@@ -39,6 +46,8 @@ public class DeliveryThread extends ThreadBase implements Runnable{
 
                 Object obj = methodMap.get(this.threadName);
 
+                // Different thread uses different method to deliver its food.
+                // Java reflection mechanism.
                 Method methodName = obj.getClass().getDeclaredMethod(this.threadName.toLowerCase() + "Deliver");
                 methodName.invoke(obj);
             }
@@ -47,6 +56,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
+    /**
+     * Store four different delivery thread objects to methodMap.
+     */
     private void storeMethods () {
         try {
             getMethodMap().put("Burger", new DeliveryThread("Burger"));
@@ -58,6 +70,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
+    /**
+     * Method to be called by "Burger" thread to deliver different type of Burgers.
+     */
     public void burgerDeliver () {
 
         while (isRunning()) {
@@ -81,6 +96,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
+    /**
+     * Method to be called by "Side" thread to deliver different type of Side.
+     */
     public void sideDeliver () {
         while (isRunning()) {
 
@@ -103,6 +121,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
+    /**
+     * Method to be called by "Beverage" thread to deliver different type of Beverage.
+     */
     public void beverageDeliver () {
         while (isRunning()) {
 
@@ -125,6 +146,9 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         }
     }
 
+    /**
+     * Method to be called by "Dessert" thread to deliver different type of Desserts.
+     */
     public void dessertDeliver () {
         while (isRunning()) {
 
@@ -151,6 +175,10 @@ public class DeliveryThread extends ThreadBase implements Runnable{
         return threadName;
     }
 
+    /**
+     * Get log content.
+     * @return String which will be used to log.
+     */
     private String getLogInfoString () {
         return
                 "\n### Deliver Thread " + threadName + " :" +

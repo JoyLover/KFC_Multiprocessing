@@ -13,7 +13,7 @@ import java.util.logging.*;
  */
 public class CateringThread extends ThreadBase implements Runnable {
 
-    // Thread id to differ from each other. (Two catering threads in total.)
+    // Thread id to differ threads from each other. (Two catering threads in total.)
     private int id;
 
     /**
