@@ -50,7 +50,7 @@ public class DeliveryThread extends ThreadBase implements Runnable{
     private void storeMethods () {
         try {
             getMethodMap().put("Burger", new DeliveryThread("Burger"));
-            getMethodMap().put("Side", new DeliveryThread("side"));
+            getMethodMap().put("Side", new DeliveryThread("Side"));
             getMethodMap().put("Beverage", new DeliveryThread("Beverage"));
             getMethodMap().put("Dessert", new DeliveryThread("Dessert"));
         } catch (Exception e) {

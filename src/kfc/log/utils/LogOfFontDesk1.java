@@ -2,6 +2,11 @@ package kfc.log.utils;
 
 import java.util.logging.*;
 
+/**
+ * Singleton of LogOfFontDesk1.
+ * Make sure two threads (FontDesk1 and a catering thread working on the same order)
+ * log into the same log file simultaneously.
+ */
 public class LogOfFontDesk1 {
 
     private static LogOfFontDesk1 logOfFontDesk1;

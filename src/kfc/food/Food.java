@@ -1,5 +1,8 @@
 package kfc.food;
 
+/**
+ * Base class of all types of food.
+ */
 public class Food {
 
     private int id;

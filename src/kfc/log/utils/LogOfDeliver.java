@@ -5,6 +5,10 @@ import java.util.logging.Formatter;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+/**
+ * Singleton of LogOfDeliver.
+ * Make sure all Deliver threads log into the same log file simultaneously.
+ */
 public class LogOfDeliver {
 
     private static LogOfDeliver logOfDeliver;

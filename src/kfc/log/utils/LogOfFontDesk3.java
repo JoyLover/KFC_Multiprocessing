@@ -5,6 +5,11 @@ import java.util.logging.Formatter;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+/**
+ * Singleton of LogOfFontDesk3.
+ * Make sure two threads (FontDesk3 and a catering thread working on the same order)
+ * log into the same log file simultaneously.
+ */
 public class LogOfFontDesk3 {
 
     private static LogOfFontDesk3 logOfFontDesk3;

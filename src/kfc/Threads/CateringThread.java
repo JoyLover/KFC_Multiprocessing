@@ -6,9 +6,17 @@ import kfc.log.utils.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.logging.*;
 
+/**
+ * Catering thread.
+ * Dealing with the order from font desk. Pack the food of the order and send to
+ * the same font desk from which receive the order.
+ */
 public class CateringThread extends ThreadBase implements Runnable {
 
+    // Thread id to differ from each other. (Two catering threads in total.)
     private int id;
+
+    //
     private BlockingQueue<Order> orderQueue;
     private Logger logger;
 
