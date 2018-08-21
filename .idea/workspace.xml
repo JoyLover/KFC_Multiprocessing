@@ -2,13 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c795826d-b11a-4715-abdc-5afdc7dfbf1e" name="Default" comment="comment details">
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Threads/CateringThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Threads/DeliveryThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Threads/FontDeskThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Threads/OrderThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/Threads/ThreadBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Beverage/Beverage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Beverage/Coke.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Beverage/Milk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Beverage/Sprite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Burger/Burger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Burger/ChickenBurger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Burger/Hamburger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Burger/VeggieBurger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Dessert/Biscuits.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Dessert/Cake.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Dessert/Cookies.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Dessert/Dessert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Food.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Side/Cheese.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Side/ColeSlaw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Side/GreenBeans.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/food/Side/Side.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/log/utils/LogOfDeliver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/log/utils/LogOfFontDesk1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/log/utils/LogOfFontDesk2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/log/utils/LogOfFontDesk3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/KFC_Multithreading/kfc/log/utils/LogOfFontDesk4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/log_deliver.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/log_font_desk_1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/log_font_desk_2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/log_font_desk_3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/production/KFC_Multithreading/log_font_desk_4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/KFC_Multithreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_deliver.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_deliver.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_font_desk_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_font_desk_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_font_desk_3.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_3.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_font_desk_4.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kfc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,13 +105,13 @@
     <session id="-370884824">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10712" />
+          <entry key="java" value="11319" />
           <entry key="txt" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10712" />
+          <entry key="JAVA" value="11319" />
           <entry key="PLAIN_TEXT" value="110" />
         </counts>
       </usages-collector>
@@ -34,14 +119,14 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="java" value="68" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="68" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -63,11 +148,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="202" column="21" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="21" />
+            <state relative-caret-position="458">
+              <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
               <folding>
                 <element signature="e#510#534#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
@@ -83,19 +168,7 @@
         <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -135,8 +208,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/OrderThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="234">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
@@ -146,11 +219,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kfc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="591">
+              <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,8 +234,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/CateringThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="69" />
+            <state relative-caret-position="-733">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,10 +246,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="241">
+              <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2833#2834#0" expanded="true" />
+                <element signature="e#2862#2863#0" expanded="true" />
+                <element signature="e#2925#2926#0" expanded="true" />
+                <element signature="e#2962#2963#0" expanded="true" />
+                <element signature="e#3016#3017#0" expanded="true" />
+                <element signature="e#3049#3050#0" expanded="true" />
+                <element signature="e#3109#3110#0" expanded="true" />
+                <element signature="e#3145#3146#0" expanded="true" />
+                <element signature="e#3194#3195#0" expanded="true" />
+                <element signature="e#3224#3225#0" expanded="true" />
+                <element signature="e#3276#3277#0" expanded="true" />
+                <element signature="e#3308#3309#0" expanded="true" />
+                <element signature="e#3363#3364#0" expanded="true" />
+                <element signature="e#3396#3397#0" expanded="true" />
+                <element signature="e#3441#3442#0" expanded="true" />
+                <element signature="e#3469#3470#0" expanded="true" />
+                <element signature="e#3513#3514#0" expanded="true" />
+                <element signature="e#3541#3542#0" expanded="true" />
+                <element signature="e#3589#3590#0" expanded="true" />
+                <element signature="e#3619#3620#0" expanded="true" />
+                <element signature="e#3671#3672#0" expanded="true" />
+                <element signature="e#3702#3703#0" expanded="true" />
+                <element signature="e#3746#3747#0" expanded="true" />
+                <element signature="e#3774#3775#0" expanded="true" />
+                <element signature="e#3823#3824#0" expanded="true" />
+                <element signature="e#3853#3854#0" expanded="true" />
+                <element signature="e#3914#3915#0" expanded="true" />
+                <element signature="e#3944#3945#0" expanded="true" />
+                <element signature="e#4002#4003#0" expanded="true" />
+                <element signature="e#4030#4031#0" expanded="true" />
+                <element signature="e#4092#4093#0" expanded="true" />
+                <element signature="e#4124#4125#0" expanded="true" />
+                <element signature="e#4185#4186#0" expanded="true" />
+                <element signature="e#4216#4217#0" expanded="true" />
+                <element signature="e#4296#4297#0" expanded="true" />
+                <element signature="e#4328#4329#0" expanded="true" />
+                <element signature="e#4366#4367#0" expanded="true" />
+                <element signature="e#4398#4399#0" expanded="true" />
+                <element signature="e#4468#4469#0" expanded="true" />
+                <element signature="e#4502#4503#0" expanded="true" />
+                <element signature="e#4536#4537#0" expanded="true" />
+                <element signature="e#4566#4567#0" expanded="true" />
+                <element signature="e#4620#4621#0" expanded="true" />
+                <element signature="e#4664#4665#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -238,9 +355,7 @@
         <option value="$PROJECT_DIR$/src/kfc/BlockingQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/kfc/test.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogBase.java" />
-        <option value="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" />
         <option value="$PROJECT_DIR$/src/kfc/Order.java" />
-        <option value="$PROJECT_DIR$/src/kfc/Main.java" />
         <option value="$PROJECT_DIR$/src/kfc/food/Food.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfDeliver.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java" />
@@ -248,9 +363,11 @@
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk3.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk4.java" />
         <option value="$PROJECT_DIR$/src/kfc/Threads/FontDeskThread.java" />
-        <option value="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" />
         <option value="$PROJECT_DIR$/src/kfc/Threads/CateringThread.java" />
         <option value="$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java" />
+        <option value="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" />
+        <option value="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" />
+        <option value="$PROJECT_DIR$/src/kfc/Main.java" />
       </list>
     </option>
   </component>
@@ -261,8 +378,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -348,7 +465,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534833785185" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534867734810" />
     <property name="jdk.selected.JAVA_MODULE" value="9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -473,7 +590,7 @@
       <workItem from="1534574127779" duration="3942000" />
       <workItem from="1534666725602" duration="35098000" />
       <workItem from="1534768601349" duration="4430000" />
-      <workItem from="1534795546075" duration="5275000" />
+      <workItem from="1534795546075" duration="7502000" />
     </task>
     <task id="LOCAL-00001" summary="general">
       <created>1533961036503</created>
@@ -545,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534833633746</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="comment details">
+      <created>1534833803725</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1534833803725</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125299000" />
+    <option name="totallyTimeSpent" value="127526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,8 +686,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -573,7 +698,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.0" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20591862" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20591862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950678" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -833,16 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -850,42 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/OrderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/CateringThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -901,16 +984,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/OrderThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="202" column="21" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="21" />
+        <state relative-caret-position="458">
+          <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
           <folding>
             <element signature="e#510#534#0" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
             <element signature="e#649#650#0" expanded="true" />
             <element signature="e#4348#4349#0" expanded="true" />
             <element signature="e#4381#4382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/CateringThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-733">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+            <element signature="e#3016#3017#0" expanded="true" />
+            <element signature="e#3049#3050#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
+            <element signature="e#3194#3195#0" expanded="true" />
+            <element signature="e#3224#3225#0" expanded="true" />
+            <element signature="e#3276#3277#0" expanded="true" />
+            <element signature="e#3308#3309#0" expanded="true" />
+            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="e#3396#3397#0" expanded="true" />
+            <element signature="e#3441#3442#0" expanded="true" />
+            <element signature="e#3469#3470#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3541#3542#0" expanded="true" />
+            <element signature="e#3589#3590#0" expanded="true" />
+            <element signature="e#3619#3620#0" expanded="true" />
+            <element signature="e#3671#3672#0" expanded="true" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#3774#3775#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
+            <element signature="e#3914#3915#0" expanded="true" />
+            <element signature="e#3944#3945#0" expanded="true" />
+            <element signature="e#4002#4003#0" expanded="true" />
+            <element signature="e#4030#4031#0" expanded="true" />
+            <element signature="e#4092#4093#0" expanded="true" />
+            <element signature="e#4124#4125#0" expanded="true" />
+            <element signature="e#4185#4186#0" expanded="true" />
+            <element signature="e#4216#4217#0" expanded="true" />
+            <element signature="e#4296#4297#0" expanded="true" />
+            <element signature="e#4328#4329#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4398#4399#0" expanded="true" />
+            <element signature="e#4468#4469#0" expanded="true" />
+            <element signature="e#4502#4503#0" expanded="true" />
+            <element signature="e#4536#4537#0" expanded="true" />
+            <element signature="e#4566#4567#0" expanded="true" />
+            <element signature="e#4620#4621#0" expanded="true" />
+            <element signature="e#4664#4665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_deliver.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

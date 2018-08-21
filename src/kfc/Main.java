@@ -45,5 +45,7 @@ public class Main {
         fontDeskThreads.shutdown();
         deliveryThreads.shutdown();
         cateringThreads.shutdown();
+
+        System.exit(0);
     }
 }

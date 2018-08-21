@@ -28,6 +28,7 @@ public class OrderThread extends ThreadBase implements Runnable {
 
         while (isRunning()) {
 
+            // To make ID unique.
             orderId++;
 
             try {

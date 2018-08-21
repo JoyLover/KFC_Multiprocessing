@@ -13,6 +13,10 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
+/**
+ * Thread Base
+ * The base of all the kfc threads, containing some variable for all threads to share.
+ */
 public class ThreadBase{
 
     /**
@@ -21,7 +25,7 @@ public class ThreadBase{
     private static BlockingQueue<Order> orders = new LinkedBlockingDeque<>(200);
 
     /**
-     * Food storage from delivering.
+     * Food storage from delivery.
      */
     // Burger
     private static BlockingQueue<ChickenBurger> chickenBurgers = new LinkedBlockingDeque<>();
@@ -55,17 +59,23 @@ public class ThreadBase{
     // Dessert
     private static HashMap<String, BlockingQueue<?>> desserts = new HashMap<String, BlockingQueue<?>>();
 
+    // Food cache that store all types of food together, making it easy to access each
+    // kind of food.
     private static HashMap<String, HashMap<String, BlockingQueue<?>>> foodCache = new HashMap<>();
 
     private static String[] foodTypes = {"Burger", "Side", "Beverage", "Dessert"};
 
+    // 4 BlockingQueues for 4 FontDeskThreads to store their processed orders, and
+    // waiting for taking by the CateringThreads.
     private static BlockingQueue<Order> fontDeskOrder1 = new ArrayBlockingQueue<>(1);
     private static BlockingQueue<Order> fontDeskOrder2 = new ArrayBlockingQueue<>(1);
     private static BlockingQueue<Order> fontDeskOrder3 = new ArrayBlockingQueue<>(1);
     private static BlockingQueue<Order> fontDeskOrder4 = new ArrayBlockingQueue<>(1);
 
+    // HashMap to map thread id to the order BlockingQueue associated with the id.
     private static HashMap<Integer, BlockingQueue<Order>> fontDeskMap = new HashMap<>();
 
+    //
     private volatile static boolean running = true;
 
 
