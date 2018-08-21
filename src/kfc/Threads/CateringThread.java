@@ -43,7 +43,7 @@ public class CateringThread extends ThreadBase implements Runnable {
     @Override
     public void run() {
 
-        while (!Thread.currentThread().isInterrupted()) {
+        while (isRunning() && !Thread.currentThread().isInterrupted()) {
 
             try {
                 // Get the order from Order Generator Thread (OrderThread).

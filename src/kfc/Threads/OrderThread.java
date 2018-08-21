@@ -4,8 +4,13 @@ import kfc.Order;
 
 import java.util.Random;
 
+/**
+ * Order Thread.
+ * Automatically generate new order to simulate the customer.
+ */
 public class OrderThread extends ThreadBase implements Runnable {
 
+    // Unique order ID.
     private int orderId = 0;
 
     public OrderThread() throws Exception {
@@ -16,6 +21,9 @@ public class OrderThread extends ThreadBase implements Runnable {
         this.orderProvider();
     }
 
+    /**
+     * Automatically generate order.
+     */
     private void orderProvider () {
 
         while (isRunning()) {

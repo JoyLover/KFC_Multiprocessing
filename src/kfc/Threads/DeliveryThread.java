@@ -75,7 +75,7 @@ public class DeliveryThread extends ThreadBase implements Runnable{
      */
     public void burgerDeliver () {
 
-        while (isRunning()) {
+        while (isRunning() && !Thread.currentThread().isInterrupted()) {
 
             try {
                 getChickenBurgers().put(new ChickenBurger());
@@ -100,7 +100,7 @@ public class DeliveryThread extends ThreadBase implements Runnable{
      * Method to be called by "Side" thread to deliver different type of Side.
      */
     public void sideDeliver () {
-        while (isRunning()) {
+        while (isRunning() && !Thread.currentThread().isInterrupted()) {
 
             try {
                 getCheeses().put(new Cheese());

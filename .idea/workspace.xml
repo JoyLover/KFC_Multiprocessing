@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kfc/Threads/CateringThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/CateringThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/Threads/FontDeskThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/FontDeskThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,27 +17,27 @@
     <session id="-370884824">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10546" />
+          <entry key="java" value="10707" />
           <entry key="txt" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10546" />
+          <entry key="JAVA" value="10707" />
           <entry key="PLAIN_TEXT" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="java" value="67" />
+          <entry key="java" value="68" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="67" />
+          <entry key="JAVA" value="68" />
           <entry key="Markdown" value="2" />
         </counts>
       </usages-collector>
@@ -60,20 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfDeliver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="3" selection-start-line="7" selection-end-line="10" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3230">
-              <caret line="179" column="48" selection-start-line="179" selection-start-column="48" selection-end-line="179" selection-end-column="48" />
+            <state relative-caret-position="-302">
+              <caret line="102" column="69" selection-start-line="102" selection-start-column="69" selection-end-line="102" selection-end-column="69" />
               <folding>
                 <element signature="e#510#534#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
@@ -88,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="3" selection-start-line="4" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -124,7 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/FontDeskThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
@@ -133,6 +124,20 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#3229#3230#0" expanded="true" />
                 <element signature="e#3254#3255#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kfc/Threads/OrderThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/CateringThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
-              <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="393">
+              <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="54" />
+            <state relative-caret-position="402">
+              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -230,7 +235,6 @@
         <option value="$PROJECT_DIR$/src/kfc/BlockingQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/kfc/test.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogBase.java" />
-        <option value="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" />
         <option value="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" />
         <option value="$PROJECT_DIR$/src/kfc/Order.java" />
         <option value="$PROJECT_DIR$/src/kfc/Main.java" />
@@ -240,9 +244,10 @@
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk2.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk3.java" />
         <option value="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk4.java" />
+        <option value="$PROJECT_DIR$/src/kfc/Threads/FontDeskThread.java" />
+        <option value="$PROJECT_DIR$/src/kfc/Threads/OrderThread.java" />
         <option value="$PROJECT_DIR$/src/kfc/Threads/CateringThread.java" />
         <option value="$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java" />
-        <option value="$PROJECT_DIR$/src/kfc/Threads/FontDeskThread.java" />
       </list>
     </option>
   </component>
@@ -340,7 +345,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534802656789" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534833580943" />
     <property name="jdk.selected.JAVA_MODULE" value="9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -465,7 +470,7 @@
       <workItem from="1534574127779" duration="3942000" />
       <workItem from="1534666725602" duration="35098000" />
       <workItem from="1534768601349" duration="4430000" />
-      <workItem from="1534795546075" duration="3507000" />
+      <workItem from="1534795546075" duration="5055000" />
     </task>
     <task id="LOCAL-00001" summary="general">
       <created>1533961036503</created>
@@ -523,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534773090061</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="comment details">
+      <created>1534802718140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534802718141</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123531000" />
+    <option name="totallyTimeSpent" value="125079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -558,7 +570,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292232" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928057" weight="0.3292232" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928057" weight="0.045622688" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007194" side_tool="true" weight="0.32883435" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32799014" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3292232" />
@@ -742,18 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/OrderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/food/Beverage/Beverage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -807,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="3" selection-start-line="4" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -841,30 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3230">
-          <caret line="179" column="48" selection-start-line="179" selection-start-column="48" selection-end-line="179" selection-end-column="48" />
-          <folding>
-            <element signature="e#510#534#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#4348#4349#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/CateringThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -874,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="54" />
+        <state relative-caret-position="402">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -890,6 +859,49 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3229#3230#0" expanded="true" />
             <element signature="e#3254#3255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/OrderThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/CateringThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kfc/Threads/DeliveryThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="102" column="69" selection-start-line="102" selection-start-column="69" selection-end-line="102" selection-end-column="69" />
+          <folding>
+            <element signature="e#510#534#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#4348#4349#0" expanded="true" />
+            <element signature="e#4381#4382#0" expanded="true" />
           </folding>
         </state>
       </provider>
