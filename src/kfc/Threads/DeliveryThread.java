@@ -200,6 +200,6 @@ public class DeliveryThread extends ThreadBase implements Runnable{
                       getCakes().size() + "<td>" +
                       getCookies().size() +
                 "</table>" +
-                "\n***\n***\n\n";
+                "\n\n***\n***\n";
     }
 }
