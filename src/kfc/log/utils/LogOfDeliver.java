@@ -30,6 +30,8 @@ public class LogOfDeliver {
 
         logger = Logger.getLogger("kfc.Threads.LogOfDeliver");
 
+        logger.setUseParentHandlers(false);
+
         if (logger == null) {
             System.out.println("logger is null");
         }

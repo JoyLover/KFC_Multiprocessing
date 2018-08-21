@@ -75,7 +75,7 @@ public class ThreadBase{
     // HashMap to map thread id to the order BlockingQueue associated with the id.
     private static HashMap<Integer, BlockingQueue<Order>> fontDeskMap = new HashMap<>();
 
-    //
+    // Flag to stop all the threads. Default to be true.
     private volatile static boolean running = true;
 
 

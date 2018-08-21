@@ -18,11 +18,16 @@ public class Order {
     private static final int beverageTypes = 3;
     private static final int dessertTypes = 3;
 
+    // Order price
     private float price = 0.0f;
+    // Food names of ordered food.
     private String foodNames = "";
+
     private float calorie = 0.0f;
 
+    // ID which will be assigned to be identical to FontDeskThread id.
     private int id = 0;
+    // Unique order ID of itself. To differentiate orders.
     private int orderId = 0;
 
     public HashMap<String, Food> foodList = new HashMap<String, Food>();
@@ -44,7 +49,6 @@ public class Order {
             r3 = r.nextInt(beverageTypes + 1);
             r4 = r.nextInt(dessertTypes + 1);
         } while (r1 == 0 && r2 == 0 && r3 == 0 && r4 == 0);
-
 
         switch (r1) {
 

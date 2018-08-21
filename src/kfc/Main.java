@@ -19,6 +19,7 @@ public class Main {
         ExecutorService fontDeskThreads = Executors.newFixedThreadPool(4);
         ExecutorService cateringThreads = Executors.newFixedThreadPool(2);
 
+        // Shared BlockingQueue of FontDeskThreads and CateringThreads.
         BlockingQueue<Order> orderQueue = new LinkedBlockingDeque<>();
 
         orderThread.submit(new OrderThread());
@@ -37,7 +38,9 @@ public class Main {
             cateringThreads.submit(new CateringThread(i, orderQueue));
         }
 
+        System.out.println("Press Enter `here` to stop the process.");
         new Scanner(System.in).nextLine();
+
         ThreadBase threadBase = new ThreadBase();
         ThreadBase.setRunning(false);
 

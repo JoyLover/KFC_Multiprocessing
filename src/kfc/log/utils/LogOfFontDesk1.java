@@ -28,6 +28,8 @@ public class LogOfFontDesk1 {
 
         logger = Logger.getLogger("kfc.Threads.FontDeskThread1");
 
+        logger.setUseParentHandlers(false);
+
         if (logger == null) {
             System.out.println("logger is null");
         }

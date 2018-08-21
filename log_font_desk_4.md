@@ -1,133 +1,145 @@
-Aug 21, 2018 6:07:23 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:13 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 > ## Font Desk 4 :
 >> ### Get oder (ORDER ID : 4) from customer. 
 >>> ### Waiting for payment. 
->>> ### **Total : 6.5**
->>> **Food list : Hamburger ColeSlaw Cake**
+>>> ### **Total : 7.4**
+>>> **Food list : ChickenBurger ColeSlaw Coke Cake**
 
->>> **Calorie : 8.0**
+>>> **Calorie : 8.9**
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:14 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >>> ### Order is paid. 
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:14 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >> ### Order will be sent to kitchen for prepare.
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:14 PM kfc.Threads.CateringThread run
 INFO: 
->> ### *From Cater 2 : The food of order 4 is on prepare.*
+>> ### *From Cater 1 : The food of order 4 is on prepare.*
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:14 PM kfc.Threads.CateringThread run
 INFO: 
->>> *From Cater 2 : One Hamburger is consumed.*
+>>> *From Cater 1 : One ChickenBurger is consumed.*
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:14 PM kfc.Threads.CateringThread run
 INFO: 
->>> *From Cater 2 : One ColeSlaw is consumed.*
+>>> *From Cater 1 : One ColeSlaw is consumed.*
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:14 PM kfc.Threads.CateringThread run
 INFO: 
->>> *From Cater 2 : One Cake is consumed.*
+>>> *From Cater 1 : One Coke is consumed.*
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:14 PM kfc.Threads.CateringThread run
 INFO: 
->> ### *From Cater 2 : The food is prepared and will be sent to font desk 4.*
+>>> *From Cater 1 : One Cake is consumed.*
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:14 PM kfc.Threads.CateringThread run
+INFO: 
+>> ### *From Cater 1 : The food is prepared and will be sent to font desk 4.*
+
+Aug 21, 2018 7:51:14 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >> ### Food is ready to serve. 
  
 ***
 ***
 
-Aug 21, 2018 6:07:24 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:14 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 > ## Font Desk 4 :
->> ### Get oder (ORDER ID : 7) from customer. 
+>> ### Get oder (ORDER ID : 6) from customer. 
 >>> ### Waiting for payment. 
->>> ### **Total : 2.6**
->>> **Food list : Hamburger**
+>>> ### **Total : 2.4**
+>>> **Food list : Cake**
 
->>> **Calorie : 4.1**
+>>> **Calorie : 2.9**
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:15 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >>> ### Order is paid. 
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:15 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >> ### Order will be sent to kitchen for prepare.
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:15 PM kfc.Threads.CateringThread run
 INFO: 
->> ### *From Cater 2 : The food of order 7 is on prepare.*
+>> ### *From Cater 1 : The food of order 6 is on prepare.*
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:15 PM kfc.Threads.CateringThread run
 INFO: 
->>> *From Cater 2 : One Hamburger is consumed.*
+>>> *From Cater 1 : One Cake is consumed.*
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:15 PM kfc.Threads.CateringThread run
 INFO: 
->> ### *From Cater 2 : The food is prepared and will be sent to font desk 4.*
+>> ### *From Cater 1 : The food is prepared and will be sent to font desk 4.*
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:15 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >> ### Food is ready to serve. 
  
 ***
 ***
 
-Aug 21, 2018 6:07:25 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:15 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 > ## Font Desk 4 :
->> ### Get oder (ORDER ID : 11) from customer. 
+>> ### Get oder (ORDER ID : 9) from customer. 
 >>> ### Waiting for payment. 
->>> ### **Total : 3.3999999**
->>> **Food list : VeggieBurger Biscuits**
+>>> ### **Total : 1.5**
+>>> **Food list : Milk**
 
->>> **Calorie : 4.7**
+>>> **Calorie : 1.5**
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:16 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >>> ### Order is paid. 
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:16 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >> ### Order will be sent to kitchen for prepare.
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:16 PM kfc.Threads.CateringThread run
 INFO: 
->> ### *From Cater 2 : The food of order 11 is on prepare.*
+>> ### *From Cater 1 : The food of order 9 is on prepare.*
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:16 PM kfc.Threads.CateringThread run
 INFO: 
->>> *From Cater 2 : One VeggieBurger is consumed.*
+>>> *From Cater 1 : One Milk is consumed.*
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.CateringThread run
+Aug 21, 2018 7:51:16 PM kfc.Threads.CateringThread run
 INFO: 
->>> *From Cater 2 : One Biscuits is consumed.*
+>> ### *From Cater 1 : The food is prepared and will be sent to font desk 4.*
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.CateringThread run
-INFO: 
->> ### *From Cater 2 : The food is prepared and will be sent to font desk 4.*
-
-Aug 21, 2018 6:07:26 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:16 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 >> ### Food is ready to serve. 
  
 ***
 ***
 
-Aug 21, 2018 6:07:26 PM kfc.Threads.FontDeskThread getOrder
+Aug 21, 2018 7:51:16 PM kfc.Threads.FontDeskThread getOrder
 INFO: 
 > ## Font Desk 4 :
->> ### Get oder (ORDER ID : 15) from customer. 
+>> ### Get oder (ORDER ID : 12) from customer. 
 >>> ### Waiting for payment. 
->>> ### **Total : 2.1**
->>> **Food list : VeggieBurger**
+>>> ### **Total : 7.0**
+>>> **Food list : ChickenBurger GreenBeans Sprite Biscuits**
 
->>> **Calorie : 3.0**
+>>> **Calorie : 6.5**
+
+Aug 21, 2018 7:51:17 PM kfc.Threads.FontDeskThread getOrder
+INFO: 
+>>> ### Order is paid. 
+
+Aug 21, 2018 7:51:17 PM kfc.Threads.FontDeskThread getOrder
+INFO: 
+>> ### Order will be sent to kitchen for prepare.
+
+Aug 21, 2018 7:51:17 PM kfc.Threads.CateringThread run
+INFO: 
+>> ### *From Cater 2 : The food of order 12 is on prepare.*
 

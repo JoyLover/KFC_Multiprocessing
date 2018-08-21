@@ -34,6 +34,7 @@ public class LogOfFontDesk3 {
         fh.setFormatter(sf);
 
         logger = Logger.getLogger("kfc.Threads.FontDeskThread3");
+        logger.setUseParentHandlers(false);
         logger.addHandler(fh);
 
         // Part of making this class a singleton
