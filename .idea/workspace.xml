@@ -91,19 +91,7 @@
       <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/test/KFC_Multithreading/production/KFC_Multithreading/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_deliver.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_deliver.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_font_desk_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_font_desk_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_font_desk_3.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_font_desk_4.md" beforeDir="false" afterPath="$PROJECT_DIR$/log_font_desk_4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/Threads/ThreadBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/log/utils/LogOfDeliver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/log/utils/LogOfDeliver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kfc/log/utils/LogOfFontDesk4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -225,8 +213,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kfc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="534">
+              <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -467,7 +455,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534874132241" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534877731243" />
     <property name="jdk.selected.JAVA_MODULE" value="9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -592,7 +580,7 @@
       <workItem from="1534574127779" duration="3942000" />
       <workItem from="1534666725602" duration="35098000" />
       <workItem from="1534768601349" duration="4430000" />
-      <workItem from="1534795546075" duration="10715000" />
+      <workItem from="1534795546075" duration="11090000" />
     </task>
     <task id="LOCAL-00001" summary="general">
       <created>1533961036503</created>
@@ -678,11 +666,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534868511183</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="comment details">
+      <created>1534874151882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534874151882</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130739000" />
+    <option name="totallyTimeSpent" value="131114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -706,13 +701,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.0" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20591862" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20591862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950678" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292232" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928057" weight="0.13563502" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49928057" visible="true" weight="0.13563502" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007194" side_tool="true" weight="0.32883435" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32799014" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3292232" />
@@ -1093,8 +1088,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kfc/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        <state relative-caret-position="534">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
